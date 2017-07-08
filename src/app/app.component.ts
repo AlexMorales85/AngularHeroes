@@ -1,7 +1,11 @@
 import { Component } from '@angular/core';
+import { HeroService } from './hero.service';
 
 @Component({
-  selector: 'my-app',
-  template: `<h1>Hello {{name}}</h1>`,
+    selector: 'my-app',
+    templateUrl: './templates/app.component.html',
+    styleUrls:['./styles/app.component.css']
 })
-export class AppComponent  { name = 'Angular'; }
+export class AppComponent {
+  title = 'Tour of Heroes';
+}
